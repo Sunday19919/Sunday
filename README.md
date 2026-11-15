@@ -1,2 +1,0 @@
-# Sunday
-For  Graphic designing
