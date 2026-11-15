@@ -1,0 +1,533 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FS² Designs | Creative Studio</title>
+
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #101010;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      padding: 22px;
+      text-align: center;
+      border-bottom: 1px solid #d4af37;
+    }
+
+    header h1 {
+      color: #d4af37;
+      font-size: 30px;
+    }
+
+    nav {
+      text-align: center;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 8px;
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 75px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      color: #d4af37;
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      line-height: 1.7;
+      color: #ddd;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 25px;
+      background: #d4af37;
+      color: #101010;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+
+    section {
+      padding: 35px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      color: #d4af37;
+      margin-bottom: 20px;
+    }
+
+    .service {
+      background: #202020;
+      padding: 20px;
+      margin: 12px 0;
+      border: 1px solid #8f722b;
+      border-radius: 10px;
+    }
+
+    .service h3 {
+      color: #d4af37;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      background: #050505;
+      color: #d4af37;
+    }
+#portfolio {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#portfolio h2 {
+  color: gold;
+  font-size: 28px;
+}
+
+#portfolio img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid gold;
+  margin-top: 10px;
+}
+
+#portfolio .service-box {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 12px;
+  background: #1a1a1a;
+}
+    
+/* Mobile-friendly design */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 23px;
+  }
+
+  .services {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
+ 
+/* FS² Designs Order Form */
+#order {
+  background: #111;
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 2px solid gold;
+}
+
+#order h2 {
+  color: gold;
+  font-size: 28px;
+}
+
+#order p {
+  color: white;
+}
+
+#order input,
+#order select,
+#order textarea {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  margin: 15px auto;
+  padding: 14px;
+  background: #222;
+  color: white;
+  border: 1px solid gold;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+#order button {
+  background: gold;
+  color: black;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  max-width: 450px;
+}
+
+/* Customer Reviews */
+#reviews {
+  background: #111;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#reviews h2 {
+  color: gold;
+  font-size: 28px;
+}
+
+.review-box {
+  background: #1a1a1a;
+  border: 1px solid gold;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 450px;
+}
+
+.review-box h3 {
+  color: gold;
+}
+
+.review-box p {
+  color: white;
+}
+
+.review-box strong {
+  color: gold;
+}
+
+/* FS² Designs Pricing */
+#pricing {
+  background: #111;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#pricing h2 {
+  color: gold;
+  font-size: 28px;
+}
+
+#pricing p {
+  color: white;
+}
+
+.price-box {
+  background: #1a1a1a;
+  border: 1px solid gold;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 400px;
+}
+
+.price-box h3 {
+  color: white;
+}
+
+.price-box p {
+  color: gold;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#backToTop {
+  display: inline-block;
+  background: gold;
+  color: black;
+  padding: 12px 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+</style>
+</head>
+
+  
+<body>
+
+  <header>
+    <img src="Logo.png" alt="FS² Designs Logo" width="150">
+    <p>Creativity • Quality • Excellence</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero" id="home">
+    <h2>Your Vision,<br>Our Creation.</h2>
+    <p>
+      Welcome to FS² Designs.
+      We turn your creative ideas into
+      beautiful and professional designs.
+    </p>
+
+    <a class="btn"
+       href="https://wa.me/2348125439232">
+       <a href="https://wa.me/2348125439232"
+   class="order-button"
+   target="_blank">
+   ORDER NOW
+       </a>
+    </a>
+  </div>
+
+  <section id="about">
+    <h2>About FS² Designs</h2>
+    <p>
+      We are a creative graphic design brand
+      based in Lagos, Nigeria. We provide
+      quality and affordable design services.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+
+    <div class="service">
+      <h3>Logo Design</h3>
+      <p>Professional business logos.</p>
+    </div>
+
+    <div class="service">
+      <h3>Flyers & Banners</h3>
+      <p>Beautiful promotional designs.</p>
+    </div>
+
+    <div class="service">
+      <h3>Photo Framing</h3>
+      <p>Creative picture frames and editing.</p>
+    </div>
+
+    <div class="service">
+      <h3>Business Cards</h3>
+      <p>Professional business identity.</p>
+    </div>
+
+    <div class="service">
+      <h3>Social Media Designs</h3>
+      <p>Creative social media graphics.</p>
+    </div>
+  </section>
+
+<section id="portfolio">
+  <h2>Our Portfolio</h2>
+  <p>Explore some of our creative designs.</p>
+
+<div class="services">
+
+  <div class="service-box">
+    <img src="Banner.jpg" alt="Logo Design" width="100%">
+    <h3>Banner Designs</h3>
+  </div>
+
+  <div class="service-box">
+    <img src="Flyer.jpg" alt="Flyer Design" width="100%">
+    <h3>Flyer Designs</h3>
+  </div>
+
+  <div class="service-box">
+    <img src="Frame.jpg" alt="Birthday Design" width="100%">
+    <h3>Frame Designs</h3>
+  </div>
+
+  <div class="service-box">
+    <img src="Business card.jpg" alt="Banner Design" width="100%">
+    <h3>Business card</h3>
+  </div>
+
+</div>
+
+  <div class="services">
+
+    <div class="service-box">
+      <h3>Business card design</h3>
+      <p>Unique business card for businesses.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>Flyer Designs</h3>
+      <p>Beautiful flyers for promotions and events.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>Birthday Designs</h3>
+      <p>Creative birthday graphics and frames.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>Banner Designs</h3>
+      <p>Professional banners for your business.</p>
+    </div>
+
+  </div>
+</section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>WhatsApp: 08125439232</p>
+    <p>Location: Lagos, Nigeria</p>
+
+    <a class="btn"
+       href="https://wa.me/2348125439232">
+       Chat With Us
+    </a>
+  </section>
+
+  <footer>
+    <p>FS² DESIGNS © 2026</p>
+    <p>Your Vision, Our Creation.</p>
+  </footer>
+
+<section id="order">
+  <h2>Place Your Order</h2>
+  <p>Tell us what design you need.</p>
+
+  <input type="text" id="customerName"
+    placeholder="Your Full Name">
+
+  <input type="tel" id="customerPhone"
+    placeholder="Your Phone Number">
+
+  <select id="designType">
+    <option value="">Choose Design Service</option>
+    <option>Logo Design</option>
+    <option>Flyer Design</option>
+    <option>Banner Design</option>
+    <option>Business Card</option>
+    <option>Photo Editing</option>
+    <option>Other</option>
+  </select>
+
+  <textarea id="orderDetails"
+    placeholder="Describe the design you want"></textarea>
+
+  <button onclick="sendOrder()">SEND ORDER TO WHATSAPP</button>
+</section>
+
+<script>
+function sendOrder() {
+  let name = document.getElementById("customerName").value;
+  let phone = document.getElementById("customerPhone").value;
+  let design = document.getElementById("designType").value;
+  let details = document.getElementById("orderDetails").value;
+
+  if (!name || !phone || !design) {
+    alert("Please fill in your name, phone number and design service.");
+    return;
+  }
+
+  let message = "Hello FS² Designs! I want to place an order."
+    + "\nName: " + name
+    + "\nPhone: " + phone
+    + "\nDesign: " + design
+    + "\nDetails: " + details;
+
+  let url = "https://wa.me/2348125439232?text="
+    + encodeURIComponent(message);
+
+  window.open(url, "_blank");
+}
+</script>
+
+<section id="pricing">
+  <h2>Our Design Prices</h2>
+  <p>Affordable prices. Quality designs.</p>
+
+  <div class="price-box">
+    <h3>Flyer Design</h3>
+    <p>₦3,000</p>
+  </div>
+
+  <div class="price-box">
+    <h3>Banner Design</h3>
+    <p>₦5,000</p>
+  </div>
+
+  <div class="price-box">
+    <h3>Business Card</h3>
+    <p>₦2,500</p>
+  </div>
+
+  <div class="price-box">
+    <h3>Photo Editing</h3>
+    <p>₦2,000</p>
+  </div>
+</section>
+
+<a href="#" id="backToTop">↑ BACK TO TOP</a>
+
+</body>
+  
+<section id="reviews">
+  <h2>Customer Reviews</h2>
+
+  <div class="review-box">
+    <h3>★★★★★</h3>
+    <p>"Beautiful and creative designs. Excellent service!"</p>
+    <strong>Happy Customer</strong>
+  </div>
+
+  <div class="review-box">
+    <h3>★★★★★</h3>
+    <p>"I love the quality of the work. Highly recommended!"</p>
+    <strong>Satisfied Customer</strong>
+  </div>
+
+  <div class="review-box">
+    <h3>★★★★★</h3>
+    <p>"Professional designs and great attention to detail."</p>
+    <strong>Happy Client</strong>
+  </div>
+</section>
+
+</html>
